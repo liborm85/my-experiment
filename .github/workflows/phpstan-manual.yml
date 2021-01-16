@@ -30,6 +30,12 @@ jobs:
         #if: steps.composer-cache.outputs.cache-hit != 'true'
         run: composer install --prefer-dist --no-progress --no-suggest
 
+      - name: php version
+        run: php --version
+
+      - name: phpstan version
+        run: php vendor/bin/phpstan.phar --version
+
       - name: Run phpstan
         run: php vendor/bin/phpstan.phar analyze src/ --level=5
 
