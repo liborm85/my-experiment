@@ -11,11 +11,20 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        php: ['7.2', '7.4']
+
     steps:
       - uses: actions/checkout@v2
 
       - name: Validate composer.json and composer.lock
         run: composer validate
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+          with:
+            php-version: "${{ matrix.php }}"
 
       #- name: Cache Composer packages
       #  id: composer-cache
