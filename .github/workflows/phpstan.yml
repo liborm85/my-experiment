@@ -17,4 +17,4 @@ jobs:
         - name: PHPStan
           uses: docker://oskarstark/phpstan-ga
           with:
-              args: analyze src/ --level=5
+              args: analyze -c phpstan.neon
