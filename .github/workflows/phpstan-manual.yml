@@ -47,5 +47,5 @@ jobs:
         run: php vendor/bin/phpstan.phar --version
 
       - name: Run phpstan
-        run: php vendor/bin/phpstan.phar analyze src/ --level=5
+        run: php vendor/bin/phpstan.phar -c phpstan.neon
 
