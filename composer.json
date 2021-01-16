@@ -1,4 +1,6 @@
 {
+    "name": "liborm85/my-experiment",
+    "description": "My experiment",
     "require": {
         "phpunit/phpunit": "^9.5"
     }
