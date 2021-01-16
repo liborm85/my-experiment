@@ -3,6 +3,7 @@
     "description": "My experiment",
     "require": {
         "phpunit/phpunit": "^7.5 || ^8.5 || ^9.5",
-        "phpstan/phpstan": "^0.12.67"
+        "phpstan/phpstan": "^0.12.67",
+        "phpstan/phpstan-deprecation-rules": "^0.12.6"
     }
 }
