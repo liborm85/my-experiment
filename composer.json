@@ -2,6 +2,7 @@
     "name": "liborm85/my-experiment",
     "description": "My experiment",
     "require": {
+        "phpstan/extension-installer": "^1.1",
         "phpunit/phpunit": "^7.5 || ^8.5 || ^9.5",
         "phpstan/phpstan": "^0.12.67",
         "phpstan/phpstan-deprecation-rules": "^0.12.6"
